@@ -1,3 +1,12 @@
+$("body").ready(function() {
+	
+	new jBox('Tooltip', {
+		attach: '.icons',
+		addClass: 'tooltip'
+	});
+
+})
+
 function navColor() {
 	
 	var nav = document.querySelector("nav");

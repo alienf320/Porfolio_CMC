@@ -23,7 +23,17 @@
 	  href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
 	  rel="stylesheet"
 	/>
+	
+	<script
+			  src="https://code.jquery.com/jquery-3.6.0.js"
+			  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			  crossorigin="anonymous"></script>
 	<script src="js/script.js"></script>
+	
+	<!-- jBox -->
+	<script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.2/dist/jBox.all.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.2/dist/jBox.all.min.css" rel="stylesheet">
+	
 </head>
 
 <body onscroll="navColor()" onload="titleAnimation()">
@@ -84,16 +94,40 @@
   <h2 class="projects-section-header-w">Devoloping skills</h2>
   
   <div class="skill">
-	<i class="fab fa-java"></i>
-	<i class="fab fa-html5"></i>
-	<i class="fab fa-css3-alt"></i>
-	<i class="fab fa-js-square"></i>
-	<img src="https://img.icons8.com/fluency-systems-regular/48/000000/mysql.png"/>
-	<img src="https://img.icons8.com/fluency-systems-regular/48/000000/pull-request.png"/>
-	<img src="https://img.icons8.com/fluency-systems-regular/48/000000/ruby-programming-language.png"/>
-	<img src="https://img.icons8.com/fluency-systems-regular/48/000000/agile.png"/>
-  </div>
+		<div class="icons" title="java">
+			<i class="fab fa-java" id="i-java"></i>
 
+		</div>
+		<div class="icons" title="HTML">
+			<i class="fab fa-html5"></i>
+
+		</div>
+		<div class="icons" title="CSS">
+			<i class="fab fa-css3-alt"></i>
+
+		</div>
+		<div class="icons" title="Javascript">
+			<i class="fab fa-js-square"></i>
+
+		</div>
+		<div class="icons" title="MySQL">
+			<img src="https://img.icons8.com/fluency-systems-regular/48/000000/mysql.png"/>
+
+		</div>
+		<div class="icons" title="GitHub">
+			<img src="https://img.icons8.com/fluency-systems-regular/48/000000/pull-request.png"/>
+
+		</div>
+		<div class="icons" title="Ruby">
+			<img src="https://img.icons8.com/fluency-systems-regular/48/000000/ruby-programming-language.png"/>
+
+		</div>
+		<div class="icons" title="Agile">
+			<img src="https://img.icons8.com/fluency-systems-regular/48/000000/agile.png"/>
+
+		</div>
+  </div>
+	
 </section>
 
 <!-- END SKILL SECTION -->
@@ -109,15 +143,15 @@
 	<div class="project-single">
 		<div class="description-project">
 			<a
-			  href="https://alienf320.github.io/Time_apps/"
+			  href="https://alienf320.github.io/Poker_calculator/"
 			  target="_blank"
 			  class="project project-tile"
-			  alt="Cronómetro"	>
-			  <p class="project-title"> Timer & Stopwatch </p>
+			  alt="Simulador mano de poker"	>
+			  <p class="project-title"> Hanged game </p>
 			</a>
-			<p class="project-description"> It's a simple app deploying a timer and a stopwatch. Main objective: Practice Javascript. </p>	
+			<p class="project-description"> It's poker hand simulator. The real challenge was the script in charge of figuring the best 5 cards out. </p>	
 			<a
-			  href="#"
+			  href="https://github.com/alienf320/Poker_calculator"
 			  target="_blank"
 			  class="github-button">
 			  <i class="fab fa-github"></i>
@@ -126,13 +160,38 @@
 		</div>
 		<img
 			class="project-single-img"
-			src="img/TimeApp.jpg"
-			alt="project"
+			src="img/poker.png"
+			alt="Juego de poker"
 		  />
 	</div>
 	
 
 	<div class="project-single">
+		<div class="description-project">
+			<a
+			  href="https://alienf320.github.io/hanged-game/"
+			  target="_blank"
+			  class="project project-tile"
+			  alt="Juego del ahorcado"	>
+			  <p class="project-title"> Hangman </p>
+			</a>
+			<p class="project-description"> It's the classic game Hangman. It was the first time using jQuery and responsive design. </p>	
+			<a
+			  href="https://github.com/alienf320/hanged-game"
+			  target="_blank"
+			  class="github-button">
+			  <i class="fab fa-github"></i>
+			  Code
+			</a> 
+		</div>
+		<img
+			class="project-single-img"
+			src="img/hanged_game.png"
+			alt="project"
+		  />
+		</div>
+		
+			<div class="project-single">
 		<div class="description-project">
 			<a
 			  href="https://alienf320.github.io/Time_apps/"
@@ -155,93 +214,18 @@
 			src="img/TimeApp.png"
 			alt="project"
 		  />
-	</div>
-	<!---
-	<div class="project-single">
-    <a
-      href="https://codepen.io/freeCodeCamp/full/wgGVVX"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
-        class="project-image"
-        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
-        alt="project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        JavaScript Calculator
-        <span class="code">&#47;&gt;</span>
-      </p>
-    </a>
-	</div>
+		</div>
 	
-	<div class="project-single">
-    <a
-      href="https://codepen.io/freeCodeCamp/full/mVEJag"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
-        class="project-image"
-        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
-        alt="project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Map Data Across the Globe
-        <span class="code">&#47;&gt;</span>
-      </p>
-    </a>
-	</div>
-	
-	<div class="project-single">
-    <a
-      href="https://codepen.io/freeCodeCamp/full/wGqEga"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
-        class="project-image"
-        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png"
-        alt="project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Wikipedia Viewer
-        <span class="code">&#47;&gt;</span>
-      </p>
-    </a>
-	</div>
-	
-	<div class="project-single">
-    <a
-      href="https://codepen.io/freeCodeCamp/full/KzXQgy"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
-        class="project-image"
-        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png"
-        alt="project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Tic Tac Toe Game
-        <span class="code">&#47;&gt;</span>
-      </p>
-    </a>
-	</div>
-	--->
   </div>
 	
-
-  <a
-    href="https://codepen.io/FreeCodeCamp/"
-    class="btn btn-show-all"
-    target="_blank"
-    >Mostrar todos<i class="fas fa-chevron-right"></i
-  ></a>
+	<div class="botonera">
+		<a
+			href="https://codepen.io/FreeCodeCamp/"
+			class="btn btn-show-all"
+			target="_blank"
+			>Mostrar todos<i class="fas fa-chevron-right"></i>
+		</a>
+	</div>
 
 </section>
 
@@ -285,6 +269,8 @@
   
   
 </footer>
+
+
 
 <!-- END FOOTER SECTION -->
 

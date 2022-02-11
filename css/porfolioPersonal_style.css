@@ -261,7 +261,16 @@ img {
 	}
 }
 
-/* Projects section */
+/* Skill section */
+
+.icons {
+	display: flex;
+	justify-content: right;
+}
+
+.tooltip {
+	color: black;
+}
 
 .skill-section {
 	background: var(--main-gray);
@@ -399,7 +408,7 @@ img {
 .project-single-img{
 	height: 100%;
 	width: 100%;
-	object-fit: cover;
+	object-fit: contain;
 	border-radius: 15px;
 }
 
@@ -425,6 +434,17 @@ img {
   border-radius: 15px 15px 0 0;
 }
 
+@media (max-width: 38.75em) {
+	.project-single {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.botonera {
+	display: flex;
+	justify-content: center;
+}
 
 .btn {
   display: inline-block;
